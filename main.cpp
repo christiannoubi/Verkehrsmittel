@@ -2,14 +2,13 @@
 #include <string>
 #include <sstream>
 #include <iostream>
-#include "Radfahrzeuge.h"
-#include "Luftfahrzeuge.h"
-#include "Pkw.h"
+#include "VerkehrsmittelSystem.h"
 using namespace std;
 
 
 int main() {
 
+    
     Luftfahrzeuge ();
     Radfahrzeuge ();
     Pkw ();

@@ -7,7 +7,7 @@
 using namespace std;
 
 
-class Verkehrsmittel :public Position{
+class Verkehrsmittel {
 
 private:
     string name;
@@ -17,9 +17,9 @@ public:
     Verkehrsmittel () {
 
     }
-    Verkehrsmittel ( string name, Position position) {
+    Verkehrsmittel ( string name, Position pos) {
         this->name = name;
-
+        
     }
 
 
