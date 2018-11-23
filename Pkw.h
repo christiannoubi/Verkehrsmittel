@@ -15,7 +15,13 @@ public:
     Pkw () {
 
     }
-    Pkw (int anzahlTueren) {
+    Pkw (string name, int anzahlTueren, int anzahlraeder, Position position) : Radfahrzeuge(name, anzahlraeder, position){
         this->anzahlTueren = anzahlTueren;
+    }
+
+    string text () {
+        stringstream s;
+        s << "Name: "<<  this->getName() <<", Anzahltueren: " <<anzahlTueren <<", Anzahlraeder: "<<this->getAnzahlRaeder() ;
+        return s.str();
     }
 };

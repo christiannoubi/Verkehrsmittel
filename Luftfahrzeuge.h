@@ -13,15 +13,13 @@ public:
     Luftfahrzeuge () {
 
     }
-    Luftfahrzeuge (double maxhoehe) {
+    Luftfahrzeuge (string name, double maxhoehe, Position position): Verkehrsmittel(name, position) {
         this->maxHoehe = maxhoehe;
     }
-    double getMaxHoehe() const {
-        return maxHoehe;
-    }
 
-    void setMaxHoehe(double maxHoehe) {
-        Luftfahrzeuge::maxHoehe = maxHoehe;
+    string text () {
+        stringstream s;
+        s << "Name: "<<  this->getName() <<", Maxhoehe: " <<maxHoehe;
+        return s.str();
     }
-
 };

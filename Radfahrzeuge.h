@@ -10,16 +10,21 @@ class Radfahrzeuge : public Verkehrsmittel {
 private:
     int anzahlRaeder;
 public:
+
+    Radfahrzeuge(string name, int anzahlRaeder, Position position) : Verkehrsmittel(name, position) {
+        this->anzahlRaeder = anzahlRaeder;
+    }
+    Radfahrzeuge() {
+
+    }
+
     int getAnzahlRaeder() const {
         return anzahlRaeder;
     }
 
-    void setAnzahlRaeder(int anzahlRaeder) {
-        Radfahrzeuge::anzahlRaeder = anzahlRaeder;
-    }
-
-    Radfahrzeuge(int anzahlRaeder) : anzahlRaeder(anzahlRaeder) {}
-    Radfahrzeuge() {
-
+    string text () {
+        stringstream s;
+        s << "Name: "<<  this->getName() <<", Anzahlraeder: " <<anzahlRaeder  ;
+        return s.str();
     }
 };

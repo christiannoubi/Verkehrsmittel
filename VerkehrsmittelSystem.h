@@ -3,7 +3,6 @@
 #include <sstream>
 #include <iostream>
 #include <vector>
-#include "Verkehrsmittel.h"
 #include "Pkw.h"
 #include "Radfahrzeuge.h"
 #include "Luftfahrzeuge.h"
@@ -22,6 +21,7 @@ public:
     }
     void fuegehinzu(Luftfahrzeuge luft) {
         luftfahrzeuge.push_back(luft);
+
     }
     void fuegehinzu(Pkw p) {
         pkw.push_back(p);

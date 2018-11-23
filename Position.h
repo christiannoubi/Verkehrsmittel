@@ -15,10 +15,10 @@ public:
 
     }
 
-   /*Position (int xPos, int yPos) {
+   Position (int xPos, int yPos) {
        this->x = xPos;
        this->y = yPos;
-   }*/
+   }
 
     int getX() const {
         return x;
