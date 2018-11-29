@@ -12,28 +12,11 @@ using namespace std;
 class VerkehrsmittelSystem {
 
 public:
-    vector <Pkw> pkw;
-    vector <Luftfahrzeuge> luftfahrzeuge;
-    vector <Radfahrzeuge> radfahrzeuge;
+    vector <Verkehrsmittel*> verkehr;
 
-    void fuegehinzu(Radfahrzeuge rad) {
-        radfahrzeuge.push_back(rad);
-    }
-    void fuegehinzu(Luftfahrzeuge luft) {
-        luftfahrzeuge.push_back(luft);
 
-    }
-    void fuegehinzu(Pkw p) {
-        pkw.push_back(p);
+    void fuegehinzu(Verkehrsmittel &v) {
+        verkehr.push_back(&v);
     }
 
-    const vector<Radfahrzeuge> Radfahrzeuge() const {
-        return radfahrzeuge;
-    }
-    const vector<Luftfahrzeuge> Luftfahrzeuge() const {
-        return luftfahrzeuge;
-    }
-    const vector<Pkw> pkws() const {
-        return pkw;
-    }
 };
